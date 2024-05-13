@@ -32,14 +32,14 @@
     border-radius: 8px;
 }
 
-.country img
+.countryCard img
 {
     width: 100px;
     height: 80px;
     object-fit:contain;
 }
 
-.country p
+.countryCard p
 {
     margin: 0;
     text-align: center;
