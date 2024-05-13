@@ -30,11 +30,11 @@ const Countries = () =>
 
     return(
         <div className={styles.container}>
-            <input className={styles.searchbar} placeholder='Search for countries' onChange={(e)=>setName(e.target.value)}/>
+            <input type="text" className={styles.searchbar} placeholder='Search for countries' onChange={(e)=>setName(e.target.value)}/>
             <div className={styles.wrapper}>
                 {filteredCountries.map((country)=>
                 (
-                <div className={styles.country} key={country.name.common}>
+                <div className={styles.countryCard} key={country.name.common}>
                     <img src={country.flags.png} alt={country.flags.alt}/>
                     <p>{country.name.common}</p>
                 </div>
