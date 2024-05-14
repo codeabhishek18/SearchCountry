@@ -26,7 +26,7 @@ const Countries = () =>
         }
     }
     
-    const filteredCountries = name !== '' ? [...countries].filter((country) => country.name.common.toLowerCase().includes(name)) : countries;
+    const filteredCountries = countries.filter((country) => country.name.common.toLowerCase().includes(name.toLowerCase()));
 
     return(
         <div className='container'>
